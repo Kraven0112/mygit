@@ -1,0 +1,147 @@
+*{
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+    font-size: 1.3rem;
+}
+.header{
+    padding-inline: 10px;
+    position:sticky;
+    top: 0;
+    backdrop-filter: blur(1.5rem);
+    border-bottom: 1px solid #000;
+}
+.header-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.nav-container a{
+    display: block;
+}
+.nav-container a+a{
+    margin-left: 2.5rem;
+}
+.searchbar{
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.searchbar .search{
+    width: 290px;
+    height: 40px;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+.search input{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    height: 100%;
+    background-color: inherit;
+    color: inherit;
+}
+.fa-magnifying-glass{
+    font-size: 1.6rem;
+    margin-right: 5px;
+}
+.select{
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    padding-inline: 4px;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.card{
+    width: 340px;
+    height: 550px;
+    box-shadow: 0 0 5px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    height: 230px;
+}
+.detail{
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 10px 20px;
+}
+.detailimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailimage img{
+    height: 350px;
+}
+.back{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: inherit;
+    border: none;
+    color: inherit;
+}
+.fa-arrow-left{
+    margin-right: 4px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:green;
+}
+.mode{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    width: 120px;
+    height: 25px;
+    font-size: 1.2rem;font-family: cursive;
+    outline: none;
+}
+@media(min-width : 300px) and (max-width:768px){
+    .nav-container{
+        display: none;
+    }
+    .detailimage img{
+        height: 250px;
+    }
+}
